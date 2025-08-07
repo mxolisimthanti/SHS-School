@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sigweje High School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header"></div>
+
+  <section id="contact" class="py-10 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Contact Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-lg font-semibold mb-2">📍 School Info</h3>
+        <p><strong>Address:</strong> Near GG Shopping Centre, Ladysmith</p>
+        <p><strong>Phone:</strong> +27 87 123 4567</p>
+        <p><strong>Email:</strong> info@sigwejehigh.co.za</p>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-2">📬 Send Us a Message</h3>
+        <form id="contactForm" onsubmit="return validateForm()" class="flex flex-col gap-4">
+          <input type="text" id="name" placeholder="Your Name" required class="p-2 border rounded" />
+          <input type="email" id="email" placeholder="Your Email" required class="p-2 border rounded" />
+          <textarea id="message" rows="5" placeholder="Your Message" required class="p-2 border rounded"></textarea>
+          <button type="submit" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.085555656341!2d30.258025075329602!3d-28.476969975750034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef18ed7d791e623%3A0x909adc0ca94f6b2c!2sSigweje%20High%20School!5e0!3m2!1sen!2sza!4v1754555411975!5m2!1sen!2sza"
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="rounded shadow">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
